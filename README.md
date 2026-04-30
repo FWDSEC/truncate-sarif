@@ -4,6 +4,9 @@ When SARIF files are really big (> 50mb) the problem is most commonly cause be i
 
 **But** when that still leaves you with a huge SARIF file, it's usually because the code snippets are gigantic and possibly numerous. This script solves that problem by truncating snippets to a max of 512 characters. If you can't fit a finding's code snippet into 2 Tweets, you've got bigger problems.
 
+## Warning
+It takes a few minutes to run. ~3 minutes for a 2gb SARIF file on my laptop.
+
 ## Installation && Usage
 ```bash
 git clone https://github.com/FWDSEC/truncate-sarif.git
